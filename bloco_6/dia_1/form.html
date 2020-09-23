@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu primeiro formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--informações do candidato-->
+<form action="" method="GET">
+<fieldset>
+    
+    <div>
+        <label for="nome">Nome Completo:</label>
+        <input id="nome" type="text" name="texto" required="required" maxlength="40"></input>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" type="text" maxlength="50" required="required">
+    </div>
+    <div>
+        <label for="doc">CPF:</label>
+        <input id="doc" type="text" maxlength="11" required="required">
+    </div>
+    <div>
+        <label for="endereco">Endereço:</label>
+        <input id="endereco" type="text" maxlength="200" required="required">
+    </div>
+    <div>
+        <label for="cidade">Cidade:</label>
+        <input id="cidade" type="text" maxlength="28" required="required">
+    </div>
+    <div>
+        <label for="estado">Estado:</label>
+        <select id="estado" required="required" name="estado">
+            <option selected="selected" value="">Selecione</option>
+        </select>
+    </div>
+    <div>
+        <p>Reside em:</p>
+        <label for=""><input name="residencia" value="1" type="radio" required="required">Casa</label><br>
+         <label for=""><input name="residencia" value="2" type="radio" required="required">Apartamento</label><br>
+    </div>
+</fieldset>
+<fieldset>
+    <div>
+        <label for="cur">Resulmo do Curriculo:</label>
+        <textarea id="cur" 
+        required="residencia" 
+        maxlength="1000" 
+        placeholder="Digite aqui..."></textarea>
+</div>
+<div>
+    <label for="cargo">Cargo:</label>
+    <input id="cargo" type="text" required="required" maxlength="40">
+</div>
+<div>
+    <label for="descri">Descrição do Cargo:</label>
+    <input id="descri" type="text" required="required" maxlength="500">
+</div>
+<div>
+    <label for="data">Data de Inicio:</label>
+    <input id="data" type="date" required="required">
+</div>
+</fieldset>
+</form>
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+    </body>
+    <script src="script.js"></script>
+    </html>
