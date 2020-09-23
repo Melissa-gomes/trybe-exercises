@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeiro formulário</title>
+    <link rel="stylesheet" href="bulma-0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css"
+    <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+</head>
+<body>
+    <!--informações do candidato-->
+    <form action="" method="GET">
+
+        <h1 class="title">Candidate-se já para Mell's Corporation</h1>
+
+        <div class="container">
+            <div class="field">
+            <label class="label" for="nome">Nome Completo:</label>
+            <div class="control">
+                <input class="input is-info" id="nome" type="text" name="texto" required="required" maxlength="40"></input>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="email">Email:</label>
+            <div class="control">
+                <input class="input is-info" id="email" type="text" maxlength="50" required="required">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="doc">CPF:</label>
+            <div class="control">
+                <input class="input is-info" id="doc" type="text" maxlength="11" required="required">
+            </div>
+        </div>
+
+        <div class="fiels">
+            <label class="label" for="endereco">Endereço:</label>
+            <div class="control">
+                <input class="input is-info" id="endereco" type="text" maxlength="200" required="required">
+            </div>
+        </div>
+
+        <div class="fiels">
+            <label class="label" for="cidade">Cidade:</label>
+            <div class="control">
+                 <input class="input is-info" id="cidade" type="text" maxlength="28" required="required">
+            </div>
+        </div>
+
+        <div class="fiels">
+            <label class="label" for="estado">Estado:</label>
+            <div class=" select multiple">
+                <select id="estado" required="required" name="estado">
+                <option selected="selected" value="">Selecione</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="fiels">
+            <div class="control">
+                <label class="radio" for="1">
+                    <input type="radio" name="residencia" value="1" id="1">
+                    Casa
+                </label>
+                 <label class="radio" for="2">
+                    <input type="radio" name="residencia" value="2" id="2">
+                    Apartamento
+                </label>
+            </div>
+
+            <div class="fiels">
+                <label class="label" for="cur">Resulmo do Curriculo:</label>
+                <textarea class="textarea is-info" id="cur" required="residencia" maxlength="1000" placeholder="Digite aqui..."></textarea>
+            </div>
+
+            <div class="fiels">
+                <label class="label" for="cargo">Cargo:</label>
+                <div class="control">
+                    <input class="input is-info" id="cargo" type="text" required="required" maxlength="40">
+                </div>
+            </div>
+
+            <div class="fiels">
+                <label class="label" for="descri">Descrição do Cargo:</label>
+                <div class="control">
+                    <input class="input is-info" id="descri" type="text" required="required" maxlength="500">
+                </div>
+            </div>
+
+            <div class="fiels">
+                <label class="label" for="data">Data de Inicio:</label>
+                <div class="control">
+                    <input class="input is-info" id="data" type="text" required="required">
+                </div>
+            </div>
+        </div>
+        <button class="button is-success" type="submit">Enviar</button>
+    <button class="button is-dark" type="reset">Limpar</button>
+    </form>
+</body>
+<footer>Todos os Direitos reservados a Mell's Corporation®</footer>
+</html>
