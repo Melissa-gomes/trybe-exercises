@@ -26,6 +26,12 @@ describe('testando os requisitos do exercicio 2', () => {
     expect(myRemove([1, 2, 3, 4], 3)).not.toContain([1, 2, 3, 4]);
   });
   // perguntar sobre o requisito 3
+  test('requisito 3', () => {
+    const array = [1, 2, 3, 4];
+    const array2 = [1, 2, 3, 4];
+    myRemove(array, 3)
+    expect(array).toEqual(array2)
+  });
   test('requisito 4', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
@@ -55,6 +61,9 @@ test('requisito 3', () => {
     expect(myFizzBuzz(5)).toEqual('buzz');
   });
   // rever o requsito 4
+  test('requisito 5', () => {
+    expect(myFizzBuzz(7)).toEqual(7);
+  });
   test('requisito 5', () => {
     expect(myFizzBuzz('xablau')).toEqual(false);
   });
